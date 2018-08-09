@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Open+Sans:400,600" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1 class="title text-center">JScalc</h1>
+			<h2 class="text-center">A Calculator built from the Math.js Library</h2>
+			<div class="panel-body"></div>
+		</header>
+		<div class="container row">	
+
+			<div class="column-6">
+				<aside class="aside" id="register">
+				</aside>
+				<button class="button button--red" id="ac">AC</button>
+			</div>
+
+			<div class="column-6">
+				<main class="main">	
+				<h2 class="calcTitle text-center">JSCalc</h2>
+				<input type="text" class="eval" id="screen" value="">
+				<div id="buttonBank">
+					<div class="row">
+						<div class="buttonContainer column-3"><button class="button button--smallSquare button--red" id="ce"><p>CE</p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="left-parentheses"><p>(</p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="right-parentheses"><p>)</p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="divide"><p>/</p></button>
+						</div>					
+						<div class="buttonContainer column-3">	<button class="button button--smallSquare" id="square"><p>x<sup>2</sup></p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="exponent"><p>x<sup>y</sup></p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="squareRoot"><p>&radic;</p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="multiply"><p>*</p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="seven"><p><p>7</p></p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="eight"><p><p>8</p></p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="nine"><p><p>9</p></p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="minus"><p><p>-</p></p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="four"><p><p>4</p></p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="five"><p><p>5</p></p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="six"><p>6</p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="plus"><p>+</p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="one"><p>1</p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="two"><p>2</p></button></div>						
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="three"><p>3</p></button></div>
+						<div class="buttonContainer column-3 equalsContainer"><button class="equals button button--largeSquare"> <p>=</p> </button></div>
+						<div class="buttonContainer column-6"><button class="button" id="zero"><p>0</p></button></div>
+						<div class="buttonContainer column-3"><button class="button button--smallSquare" id="decimal"><p>.</p></button></div>
+
+					</div>
+						
+				</main>
+			</div>
+
+
+		</div>
+		<footer class="text-center"> 
+			<a class="link link--subtle" href="http://mathjs.org/docs/expressions/syntax.html#precedence">Precedence used in jsCalc</a>
+		</footer>
+		<script src="../js/script.js"></script>
+	</body>
+</html>
