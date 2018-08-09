@@ -178,19 +178,19 @@ function output (statement, result) {
 }
 
 function equalsFunc () {
-	let eval = document.querySelector('.eval').value;
+	let evaluator = document.querySelector('.eval').value;
 	try {
-		let answer = math.eval(eval);
+		let answer = math.eval(evaluator);
 	}
 	catch(err) {
 		let answer = err.message;
-		output(eval, answer);
+		output(evaluator, answer);
 		clearEntry();
 		console.log(answer);
 	}
 	finally {
-		let answer = math.eval(eval);
-		output(eval, answer);
+		let answer = math.eval(evaluator);
+		output(evaluator, answer);
 		clearEntry();
 		console.log(answer);
 	}
